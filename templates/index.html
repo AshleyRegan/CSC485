@@ -3,4 +3,10 @@ $def with (name)
 $if name:
     I just wanted to say <em>hello</em> to $name.
 $else:
-    <em>Hello</em>, world!
+    <form method="post" action="add">
+		<p>
+			<input type="text" placeholder="Username" name="un" />
+			<input type="text" placeholder="Password" name="pw" />
+			<input type="submit" value="Add" />
+		</p>
+	</form>
