@@ -1,42 +1,40 @@
 The goal of this project is to provide a secured and unsecured  implementation of the same functionality.
 
-You can do the implementation using either Java or Python.
-
 You must select 3 vulnerabilities from the top 10 and provide for each a secured and an unsecured implementation.
 
 What you must provide:
+	-Documentation of the system, use case scenario  (10 points)
+	-Documentation of which vulnerability you selected and for each,  a vulnerable implementation, code/script to take advantage of the vulnerability and a non-vulnerable implementation of the same functionality and how to verify that it is not vulnerable
+	(25 points by vulnerability:
+		5 DOCUMENTATION,
+		10 IMPLEMENTATIONS,
+		10 HOW TO TAKE ADVANTAGE OF THE VULNERABILITY)
+	-Code of the system
+	-Demo in class (10 minutes): 3-5 slides to present what you did, a a demo of each vulnerability, how to take advantage of it and how you secure it (10 points)
+	-Email status ( 5 points): every Friday, each team must email me their status: what vulnerabilities you selected ? for each, is the implementation completed ? the script to take advantage of it ? the non-vulnerable implementation ? its documentation ?
+	-Bonus: 10 points if you implement a 4th vulnerability
 
-Documentation of the system, use case scenario  (10 points)
-Documentation of which vulnerability you selected and for each,  a vulnerable implementation, code/script to take advantage of the vulnerability and a non-vulnerable implementation of the same functionality and how to verify that it is not vulnerable (25 points by vulnerability: 5 documentation, 10 implementations, 10 how to take advantage of the vulnerability)
-Code of the system
-Demo in class (10 minutes): 3-5 slides to present what you did, a a demo of each vulnerability, how to take advantage of it and how you secure it (10 points)
-Email status ( 5 points): every Friday, each team must email me their status: what vulnerabilities you selected ? for each, is the implementation completed ? the script to take advantage of it ? the non-vulnerable implementation ? its documentation ?
-Bonus: 10 points if you implement a 4th vulnerability
 Deadline: Nov 22nd
-
 Demo in class: Nov. 30th
-
 Submission: one zip file in moodle, which includes the documentation, the source code and the presentation.
 
 To do the project with Python.
+	You can use web.py to do the implementation(http://webpy.org/), it is installed under python 2.7.
+	Please read the tutorial: http://webpy.org/docs/0.3/tutorial  
+	Take a look at the code.zip with an index page and a template.
+	To start the code: python code.py <optionnal port number>
+	You can type : http://localhost:8080/ to access the index page in your browser. 
+	http://localhost:8080/?name=Joe to test with a parameter.
 
-You can use web.py to do the implementation(http://webpy.org/), it is installed under python 2.7.
-
-Please read the tutorial: http://webpy.org/docs/0.3/tutorial  
-Take a look at the code.zip with an index page and a template.
-To start the code: python code.py <optionnal port number>
-You can type : student.cs.plattsburgh.edu:8080 to access the index page in your browser. 
-student.cs.plattsburgh.edu:8080/?name=Joe to test with a parameter.
-
-It should display data such as:
-#	Name	Last name	Birth date	Role	Department	E-mail	
-101	John	Smith	12-12-1980	Manager	Sales	john.smith@abc.com	
-102	Laura	Adams	02-11-1979	Manager	IT	laura.adams@abc.com	
-103	Peter	Williams	22-10-1966	Coordinator	HR	peter.williams@abc.com	
-104	Joana	Sanders	11-11-1976	Manager	Marketing	joana.sanders@abc.com	
-105	John	Drake	18-08-1988	Coordinator	Finance	john.drake@abc.com	
-106	Samuel	Williams	22-03-1985	Coordinator
-(*** lines alternate color and shit... ***)
+	It should display data such as:
+		#	Name	Last name	Birth date		Role			Department		E-mail	
+		101	John	Smith		12-12-1980		Manager			Sales			john.smith@abc.com	
+		102	Laura	Adams		02-11-1979		Manager			IT				laura.adams@abc.com	
+		103	Peter	Williams	22-10-1966		Coordinator		HR				peter.williams@abc.com	
+		104	Joana	Sanders		11-11-1976		Manager			Marketing		joana.sanders@abc.com	
+		105	John	Drake		18-08-1988		Coordinator		Finance			john.drake@abc.com	
+		106	Samuel	Williams	22-03-1985		Coordinator		Finance			samuel.williams@abc.com
+		(*** lines alternate color and shit... ***)
 
 A1 Injection:
 	Scenario #1: The application uses untrusted data in the construction of the following vulnerable SQL call:
