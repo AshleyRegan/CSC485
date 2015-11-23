@@ -9,7 +9,8 @@ render = web.template.render('templates/')
 
 urls = (
    '/', 'index',
-   '/hello', 'hellworld'
+   '/hello', 'hellworld',
+   '/add', 'add'
 )
 
 class helloworld:
@@ -18,10 +19,12 @@ class helloworld:
 
 class add:
     def POST(self):
-        i = web.input()
-        n = db.insert('ppl', username=i.un, password=i.pw)
-        raise web.seeother('/')
-
+       conn = lite.connect('people.db')
+       c = conn.cursor()
+       i = web.input()
+       c.execute("INSERT INTO Ppl(username, password) VALUES('" + i.un + "', '" + i.pw + "')")
+       conn.commit()
+       
 class index:
    def GET(self):
         i = web.input(name=None)
@@ -30,3 +33,4 @@ class index:
 if __name__ == "__main__":
     app = web.application(urls, globals())
     app.run()
+
