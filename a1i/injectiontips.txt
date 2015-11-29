@@ -13,3 +13,15 @@ https://www.owasp.org/index.php?title=SQL_Injection_Prevention_Cheat_Sheet&setla
 https://pymotw.com/2/sqlite3/
 http://www.veracode.com/security/sql-injection
 
+##@get('/login')
+##def pshit(un, pw):
+##    conn = lite.connect('people.db')
+##    c = conn.cursor()
+##    try:
+##        c.execute("SELECT * FROM Ppl WHERE username='%s' AND password='%s'" % (un, pw))
+##        result = c.fetchall()
+##        return ''''''
+##    except lite.OperationalError:
+##        return 'Sorry! It failed!'
+##    conn.commit()
+##    c.close()
