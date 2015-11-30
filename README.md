@@ -1,5 +1,4 @@
 # CSC485
-Blame the Canadian
 
 
 The goal of this project is to provide a secured and unsecured  implementation of the same functionality.
